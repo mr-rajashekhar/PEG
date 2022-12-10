@@ -1,0 +1,30 @@
+<div class="card">
+  <center>
+    <img
+      class="rounded mb-4"
+      src="{{ site.baseurl }}/{{ people.path }}"
+      alt="{{ post.title }}"
+      style="height: 215.5px; width: 168px"
+    />
+  </center>
+
+  <div class="card-block">
+    <center>
+      <h2 class="card-title h4 serif-font">{{ people.name }}</h2>
+      <p class="card-text text-muted">
+        {{ people.bio | strip_html | truncatewords:15 }}
+      </p>
+      <div class="metafooter">
+        <div class="wrapfooter small d-flex align-items-center">
+          <span class="author-meta">
+            <span class="post-name"> {{ people.position }}</span><br />
+            <span class="post-date">{{ people.time}}</span><br />
+            <!-- <span class="post-name"> {{ people.bio }}</span> -->
+          </span>
+          <!-- <div class="clearfix"></div> -->
+        </div>
+      </div>
+    </center>
+  </div>
+</div>
+<!-- end post -->

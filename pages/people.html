@@ -1,12 +1,14 @@
 ---
-title: Home
 layout: default
+title: Contact
+permalink: "/people/"
 background: "/img/bg-index.jpg"
+comments: false
 ---
 
 <!-- Home Intro The background and the text on it!
 ================================================== -->
-{% if page.url == "/" %}
+{% if page.url == "/people/" %}
 <div class="rounded mb-5 hero">
   <div class="row align-items-center justify-content-between">
     <div class="col-md-6">
@@ -36,22 +38,15 @@ background: "/img/bg-index.jpg"
 
 <!-- Posts 
 ================================================== -->
-<center><h1>Latest News</h1></center>
-<section class="row">
-  <div class="row">
-    {% for post in paginator.posts %} {% if post.category == "news" %}
-    <div class="col-md-4 mb-5">{% include postbox.html %}</div>
-    {% endif %} {% endfor %}
-  </div>
-</section>
+<center><h1>Students</h1></center>
 
 <!-- Sponsors
 =======================================================-->
-<center><h1>Our Sponsors</h1></center>
+<!-- <center><h1>Our Sponsors</h1></center> -->
 <section class="row">
   <div class="row">
-    {% for sponsor in site.data.sponsors.sponsors%}
-    <div class="col-md-2 mb-5">{% include sponsors.html %}</div>
+    {% for people in site.data.people.people%}
+    <div class="col-md-3 mb-5">{% include people.html %}</div>
     {% endfor %}
   </div>
 </section>

@@ -1,0 +1,14 @@
+<!-- begin post -->
+<!-- {% assign author = site.authors[post.author] %} -->
+<div class="card">
+  <a href="{{ post.url | absolute_url }}">
+    {% if sponsor.path %}
+    <img
+      class="rounded mb-4"
+      src="{{ site.baseurl }}/{{ sponsor.path }}"
+      alt="{{ post.title }}"
+    />
+    {% endif %}
+  </a>
+</div>
+<!-- end post -->

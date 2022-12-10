@@ -1,13 +1,13 @@
-title: "Affiliates"
+title: "Power and Energy Gropu IIT Dharwad"
 email: wowthemesnet@gmail.com
 timezone: UTC
 baseurl: "/affiliates-jekyll-theme"
 permalink: "/:title/"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+logo: "assets/images/peg_logo.svg"
+favicon: "assets/images/favicon.ico"
 author: Sal
 paginate: 30
-disqus: 'demowebsite'
+disqus: "demowebsite"
 locale: en_us
 lang: en_us
 feed_items: 10
@@ -27,7 +27,7 @@ authors:
   sal:
     name: Sal
     display_name: Sal
-    avatar: 'assets/images/sal.png'
+    avatar: "assets/images/sal.png"
     email: wowthemesnet@gmail.com
     web: https://www.wowthemes.net/category/jekyll-themes/
     twitter: https://twitter.com/wowthemesnet
@@ -35,7 +35,7 @@ authors:
   john:
     name: John
     display_name: John
-    avatar: 'assets/images/john.png'
+    avatar: "assets/images/john.png"
     email: wowthemesnet@gmail.com
     web: https://www.wowthemes.net/category/jekyll-themes/
     twitter: https://twitter.com/wowthemesnet
@@ -48,9 +48,9 @@ social:
   twitter: https://twitter.com/bstartercom
 
 # Plugins
-plugins: 
-- jekyll-paginate
-- jekyll-sitemap
-- jekyll-feed
-- jekyll-seo-tag
-- jekyll-archives
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
