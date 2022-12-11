@@ -36,11 +36,20 @@ comments: false
 </div>
 {% endif %}
 
-<!-- Posts 
+<!-- Faculty
 ================================================== -->
+<center><h1>Faculty</h1></center>
+<section class="row">
+  <div class="row">
+    {% for people in site.data.people.faculty%}
+    <div class="col-md-6 mb-5">{% include faculty.html %}</div>
+    {% endfor %}
+  </div>
+</section>
+
 <center><h1>Students</h1></center>
 
-<!-- Sponsors
+<!-- Students
 =======================================================-->
 <!-- <center><h1>Our Sponsors</h1></center> -->
 <section class="row">

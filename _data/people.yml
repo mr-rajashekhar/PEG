@@ -40,3 +40,14 @@ people:
     time: (2022- till date)
     bio: Power electronics and control DC circuit breaker
     path: assets/images/students/1.jpg
+
+faculty:
+  - name: Pratyasa Bhui
+    bio: Power system stability, Impact of EV and renewables on grid dynamics, wide area measurement systems, Microgrids
+    path: assets/images/students/PB.png
+  - name: Abhijit Kshirsagar
+    bio: Multilevel and MMC converters, WBG devices, Fast EV Chargers, Converters for Renewable Integration
+    path: assets/images/students/AK.jpg
+  - name: Satish Naik
+    bio: Converters for electric vehicles (EV), DC circuit breakers, grid connected multilevel inverters, high voltage power electronics, and power converter control
+    path: assets/images/students/SN.png
