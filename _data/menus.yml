@@ -10,7 +10,7 @@ topmenu:
     url: "about/"
 
   - title: Publications
-    url: "about/"
+    url: "publications/"
 
   - title: Contact
     url: "contact/"

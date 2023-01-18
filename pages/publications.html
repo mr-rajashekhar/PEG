@@ -1,0 +1,58 @@
+---
+layout: default
+title: Contact
+permalink: "/publications/"
+background: "/img/bg-index.jpg"
+comments: false
+---
+
+<!-- Home Intro The background and the text on it!
+================================================== -->
+{% if page.url == "/publications/" %}
+<div class="rounded mb-5 hero">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-md-6">
+      <h1 class="font-weight-bold mb-4 serif-font">
+        Let me teach you how to become successful online
+      </h1>
+      <p class="lead mb-4">
+        My name is Lyam and I'm here to share with you my knowledge and
+        experience of over 10 years of monetizing my blog.
+      </p>
+      <a
+        href="{{site.baseurl}}/about"
+        class="btn btn-dark text-white px-5 btn-lg"
+        >About me</a
+      >
+    </div>
+    <div class="col-md-6 text-right pl-0 pl-lg-4">
+      <img
+        class="intro"
+        height="500"
+        src="{{site.baseurl}}/assets/images/intro.svg"
+      />
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Faculty
+================================================== -->
+<h1>Publications</h1>
+<h3>Journal Publications:</h3>
+<section class="row">
+  <div class="row">
+    {% for paper in site.data.papers.papers%} {% if paper.type == "journal" %}
+    <div class="col-md-12 mb-5">{% include papers.html %}</div>
+    {% endif %} {% endfor %}
+  </div>
+  <h3>Conference Publications:</h3>
+  <section class="row">
+    <div class="row">
+      {% for paper in site.data.papers.papers%} {% if paper.type == "conference"
+      %}
+      <div class="col-md-12 mb-5">{% include papers.html %}</div>
+      {% endif %} {% endfor %}
+    </div>
+  </section>
+</section>

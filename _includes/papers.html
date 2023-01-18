@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-block">
+    <!-- <p class="card-text text-muted">
+      [J{{paper.number}}]{{ paper.authors | strip_html}}
+      <b>{{ paper.title}}</b> {{ paper.venue}} {{paper.no}}
+    </p> -->
+    {% if paper.type == "journal" %}
+    <p>
+      [J{{paper.number}}] {{ paper.authors | strip_html}},
+      <b>"{{ paper.title}}"</b>, {{ paper.venue}}
+    </p>
+    {% else %}
+    <p>
+      [C{{paper.number}}] {{ paper.authors | strip_html}},
+      <b>{{ paper.title}}</b>, {{ paper.venue}}
+    </p>
+    {% endif %}
+
+    <div class="metafooter">
+      <div class="wrapfooter small d-flex align-items-center">
+        <span class="author-meta"> </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end post -->
