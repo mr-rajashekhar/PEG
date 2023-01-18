@@ -14,6 +14,8 @@ topmenu:
 
   - title: Contact
     url: "contact/"
+  - title: Gallery
+    url: "images/"
 
   # - title: Get this theme
   #   url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/
