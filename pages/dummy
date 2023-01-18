@@ -1,0 +1,3 @@
+{% for people in site.posts %}
+<div class="col-md-8 mb-5">{% include people.html %}</div>
+{% endfor %}

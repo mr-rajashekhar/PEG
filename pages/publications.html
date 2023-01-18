@@ -42,15 +42,16 @@ comments: false
 <section class="row">
   <h3>Journal Publications:</h3>
   <div class="row">
-    {% for paper in site.data.papers.papers%} {% if paper.type == "journal" %}
+    {% for paper in site.posts%}{% if paper.category == "paper" %} {% if
+    paper.type == "journal" %}
     <div class="col-md-12 mb-5">{% include papers.html %}</div>
-    {% endif %} {% endfor %}
+    {% endif %}{% endif %} {% endfor %}
   </div>
   <h3>Conference Publications:</h3>
   <div class="row">
-    {% for paper in site.data.papers.papers%} {% if paper.type == "conference"
-    %}
+    {% for paper in site.posts%} {% if paper.category == "paper" %}{% if
+    paper.type == "conference" %}
     <div class="col-md-12 mb-5">{% include papers.html %}</div>
-    {% endif %} {% endfor %}
+    {% endif %} {% endif %} {% endfor %}
   </div>
 </section>
