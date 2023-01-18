@@ -39,20 +39,18 @@ comments: false
 <!-- Faculty
 ================================================== -->
 <h1>Publications</h1>
-<h3>Journal Publications:</h3>
 <section class="row">
+  <h3>Journal Publications:</h3>
   <div class="row">
     {% for paper in site.data.papers.papers%} {% if paper.type == "journal" %}
     <div class="col-md-12 mb-5">{% include papers.html %}</div>
     {% endif %} {% endfor %}
   </div>
   <h3>Conference Publications:</h3>
-  <section class="row">
-    <div class="row">
-      {% for paper in site.data.papers.papers%} {% if paper.type == "conference"
-      %}
-      <div class="col-md-12 mb-5">{% include papers.html %}</div>
-      {% endif %} {% endfor %}
-    </div>
-  </section>
+  <div class="row">
+    {% for paper in site.data.papers.papers%} {% if paper.type == "conference"
+    %}
+    <div class="col-md-12 mb-5">{% include papers.html %}</div>
+    {% endif %} {% endfor %}
+  </div>
 </section>
