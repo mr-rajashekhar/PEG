@@ -9,31 +9,6 @@ comments: false
 <!-- Home Intro The background and the text on it!
 ================================================== -->
 {% if page.url == "/people/" %}
-<!-- <div class="rounded mb-5 hero">
-  <div class="row align-items-center justify-content-between">
-    <div class="col-md-6">
-      <h1 class="font-weight-bold mb-4 serif-font">
-        Let me teach you how to become successful online
-      </h1>
-      <p class="lead mb-4">
-        My name is Lyam and I'm here to share with you my knowledge and
-        experience of over 10 years of monetizing my blog.
-      </p>
-      <a
-        href="{{site.baseurl}}/about"
-        class="btn btn-dark text-white px-5 btn-lg"
-        >About me</a
-      >
-    </div>
-    <div class="col-md-6 text-right pl-0 pl-lg-4">
-      <img
-        class="intro"
-        height="500"
-        src="{{site.baseurl}}/assets/images/intro.svg"
-      />
-    </div>
-  </div>
-</div> -->
 <div>
   <img src="{{site.baseurl}}/assets/images/people.png" />
 </div>
@@ -41,16 +16,16 @@ comments: false
 
 <!-- Faculty
 ================================================== -->
-<center><h1>Faculty</h1></center>
+<center><h1 style="margin: 50px">Faculty</h1></center>
 <section class="row">
   <div class="row">
     {% for people in site.posts%}{% if people.category == "faculty" %}
-    <div class="col-md-6 mb-5">{% include people.html %}</div>
+    <div class="col-md-4 mb-5">{% include people.html %}</div>
     {% endif %} {% endfor %}
   </div>
 </section>
 
-<center><h1>Students</h1></center>
+<center><h1 style="margin: 50px">Students</h1></center>
 
 <!-- Students
 =======================================================-->
@@ -58,7 +33,7 @@ comments: false
 <section class="row">
   <div class="row">
     {% for people in site.posts%}{% if people.category == "student" %}
-    <div class="col-md-4 mb-5">{% include people.html %}</div>
+    <div class="col-md-3 mb-4">{% include people.html %}</div>
     {% endif %} {% endfor %}
   </div>
 </section>

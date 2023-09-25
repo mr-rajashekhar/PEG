@@ -7,41 +7,19 @@ background: "/img/bg-index.jpg"
 <!-- Home Intro The background and the text on it!
 ================================================== -->
 {% if page.url == "/" %}
-<!-- <div class="rounded mb-5 hero">
-  <div class="row align-items-center justify-content-between">
-    <div class="col-md-6">
-      <h1 class="font-weight-bold mb-4 serif-font">
-        Let me teach you how to become successful online
-      </h1>
-      <p class="lead mb-4">
-        My name is Lyam and I'm here to share with you my knowledge and
-        experience of over 10 years of monetizing my blog.
-      </p>
-      <a
-        href="{{site.baseurl}}/about"
-        class="btn btn-dark text-white px-5 btn-lg"
-        >About me</a
-      >
-    </div>
-    <div class="col-md-6 text-right pl-0 pl-lg-4">
-      <img
-        class="intro"
-        height="auto"
-        width="100%"
-        src="{{site.baseurl}}/assets/images/peg.png"
-      />
-    </div>
-  </div>
-</div> -->
 <div>
-  <img src="{{site.baseurl}}/assets/images/peg.png" />
+  <img src="{{site.baseurl}}/assets/images/bg.png" height="200px" />
 </div>
 {% endif %}
 
 <!-- Posts 
 ================================================== -->
 <br />
-<center><h1>Latest News</h1></center>
+<center>
+  <h1 style="margin: 20px">
+    <span style="border-bottom: 2px solid black">Latest News</span>
+  </h1>
+</center>
 <section class="row">
   <div class="row">
     {% for post in paginator.posts %} {% if post.category == "news" %}
@@ -52,7 +30,11 @@ background: "/img/bg-index.jpg"
 
 <!-- Sponsors
 =======================================================-->
-<center><h1>Our Sponsors</h1></center>
+<center>
+  <h1 style="margin: 50px">
+    <span style="border-bottom: 2px solid black">Our Sponsors</span>
+  </h1>
+</center>
 <section class="row">
   <div class="row">
     {% for sponsor in site.data.sponsors.sponsors%}

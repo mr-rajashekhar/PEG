@@ -1,5 +1,5 @@
 title: "Power and Energy Group IIT Dharwad"
-email: wowthemesnet@gmail.com
+email: tella.rajashekhar@gmail.com
 timezone: UTC
 baseurl: ""
 permalink: "/:title/"
@@ -54,3 +54,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+livereload:
+  host: 0.0.0.0
+  port: 35740
+  https: false # Ensure this is set to false for HTTP

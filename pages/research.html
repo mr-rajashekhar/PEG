@@ -1,0 +1,39 @@
+---
+layout: default
+title: Contact
+permalink: "/research/"
+background: "/img/bg-index.jpg"
+comments: false
+---
+
+<!-- Home Intro The background and the text on it!
+================================================== -->
+{% if page.url == "/research/" %}
+<div>
+  <img src="{{site.baseurl}}/assets/images/people.png" />
+</div>
+{% endif %}
+
+<!-- Faculty
+================================================== -->
+<center><h1 style="margin: 50px">Faculty</h1></center>
+<section class="row">
+  <div class="row">
+    {% for people in site.posts%}{% if people.category == "faculty" %}
+    <div class="col-md-4 mb-5">{% include people.html %}</div>
+    {% endif %} {% endfor %}
+  </div>
+</section>
+
+<center><h1 style="margin: 50px">Students</h1></center>
+
+<!-- Students
+=======================================================-->
+<!-- <center><h1>Our Sponsors</h1></center> -->
+<section class="row">
+  <div class="row">
+    {% for people in site.posts%}{% if people.category == "student" %}
+    <div class="col-md-3 mb-4">{% include people.html %}</div>
+    {% endif %} {% endfor %}
+  </div>
+</section>

@@ -7,7 +7,7 @@ topmenu:
     url: "people/"
 
   - title: Research
-    url: "about/"
+    url: "slideshow/"
 
   - title: Publications
     url: "publications/"
