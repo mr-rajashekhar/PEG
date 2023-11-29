@@ -1,9 +1,10 @@
 ---
 layout: post
 category: student
-name: Venkata Raghavendra I
+present: no
+name: Venkata Raghavendra 
 position: Ph.D Candidate
-time: (2019- till date)
+time: (2019- 2023)
 bio: Power Electronics, Grid connected converters, Multilevel inverter, DC circuit breaker
 image: assets/images/students/2.jpg
 ---
