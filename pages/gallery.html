@@ -5,11 +5,11 @@ permalink: "/gallery/"
 comments: false
 ---
 
-<center><h1>Gallery</h1></center>
+<center><h1 style="margin-bottom: 40px">Gallery</h1></center>
 <section class="row">
   <div class="row">
     {% for sponsor in site.data.gallery.images%}
-    <div class="col-md-5 mb-5">{% include image.html %}</div>
+    <div class="col-md-4 mb-4">{% include image.html %}</div>
     {% endfor %}
   </div>
 </section>
