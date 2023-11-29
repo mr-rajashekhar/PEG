@@ -1,7 +1,7 @@
 ---
 layout: post
 category: student
-present: no
+status: past
 name: Venkata Raghavendra 
 position: Ph.D Candidate
 time: (2019- 2023)

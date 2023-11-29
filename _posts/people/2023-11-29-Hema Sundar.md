@@ -1,7 +1,7 @@
 ---
 layout: post
 category: student
-present: yes
+status: present
 name: Hemasundar J
 position: Ph.D Canditate
 time: (2023- till date)

@@ -27,13 +27,22 @@ comments: false
 
 <center><h1 style="margin: 50px">Students</h1></center>
 
-<!-- Students
-=======================================================-->
-<!-- <center><h1>Our Sponsors</h1></center> -->
+<h2 style="margin-bottom: 30px; border-bottom: 1000px;">Present</h2>
 <section class="row">
   <div class="row">
     {% for people in site.posts%}{% if people.category == "student" %}
+    {% if people.status == "present" %}
     <div class="col-md-3 mb-4">{% include people.html %}</div>
-    {% endif %} {% endfor %}
+    {% endif %}{% endif %} {% endfor %}
+  </div>
+</section>
+
+<h2 style="margin-bottom: 30px; border-bottom: 1000px;">Past</h2>
+<section class="row">
+  <div class="row">
+    {% for people in site.posts%}{% if people.category == "student" %}
+    {% if people.status == "past" %}
+    <div class="col-md-3 mb-4">{% include people.html %}</div>
+    {% endif %}{% endif %} {% endfor %}
   </div>
 </section>

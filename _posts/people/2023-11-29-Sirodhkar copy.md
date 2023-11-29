@@ -1,7 +1,7 @@
 ---
 layout: post
 category: student
-present: yes
+status: present
 name: Prasanth P
 position: M.S. Candidate
 time: (2023- till date)
