@@ -1,0 +1,10 @@
+{% assign author = site.authors[post.author] %}
+<div class="col-md">
+    <img src="{{ site.baseurl }}/{{research_areas.image}}" class="img-fluid" alt="">
+</div>
+<div class="col-md p-5">
+    <h2>{{research_areas.title}}</h2>
+    <p class="lead">
+        {{ research_areas.excerpt | strip_html | truncatewords:100 }}
+    </p>
+</div>

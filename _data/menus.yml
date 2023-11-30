@@ -7,13 +7,13 @@ topmenu:
     url: "people/"
 
   - title: Research
-    url: "publications/"
+    url: "research/"
 
   - title: Publications
     url: "publications/"
 
-  - title: Contact
-    url: "contact/"
+  - title: Events
+    url: "events/"
 
   - title: Gallery
     url: "gallery/"
