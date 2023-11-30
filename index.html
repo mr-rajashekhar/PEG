@@ -6,36 +6,61 @@ background: "/img/bg-index.jpg"
 
 <!-- Home Intro The background and the text on it!
 ================================================== -->
-{% if page.url == "/" %}
+<!-- {% if page.url == "/" %}
 <div>
   <img src="{{site.baseurl}}/assets/images/bg.png" height="200px" />
 </div>
-{% endif %}
+{% endif %} -->
+<!-- Slideshow container -->
+<br class="slideshow-container">
 
-
-<!-- Posts 
-================================================== -->
-<br />
-<center>
-  <h1 style="margin: 20px">
-    <span style="border-bottom: 2px solid black">Latest News</span>
-  </h1>
-</center>
-<section class="row">
-  <div class="row">
-    {% for post in paginator.posts %} {% if post.category == "news" %}
-    <div class="col-md-4 mb-5">{% include postbox.html %}</div>
-    {% endif %} {% endfor %}
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="{{site.baseurl}}/assets/images/slide1.jpg">
+    <!-- <div class="text">Caption Text</div> -->
   </div>
-</section>
 
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="{{site.baseurl}}/assets/images/slide2.jpeg" style="width:100%">
+    <div class="text">Ph.D. Scholar Little Pradhan from the group presented her work on cascaded modular converters at hashtag#IECON2023!</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="{{site.baseurl}}/assets/images/slide3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+
+<h1 style="margin-top:20px;margin-bottom: 0px">
+  <span style="border-bottom: 2px solid black">ABOUT</span>
+</h1>
+<br>The Power and Energy Group (PEG) at IIT-Dharwad is the amalgamation of expertise in multiple areas including power electronics, power systems, protection, magnetics, design and fabrication of electronic systems and industrial design. The group is currently executing funded research projects from Industry and scientific bodies such as DST and SERB in areas including DC Circuit breakers, Effects of renewable generation on Power System Dynamics and protection, and Electric vehicles.
+
+  For more information please see the <a href="https://gitea.iitdh.ac.in/PEG/PEG-Wiki/wiki" style="color: #902C8C;font-weight: bold;"> Lab Wiki </a> 
+  here and watch <a href="https://twitter.com/peg_iitdh" style="color: #902C8C;font-weight: bold;"> our latest updates </a>. 
+  Our  <a href="https://www.linkedin.com/company/peg-iitdh" style="color: #902C8C;font-weight: bold;">LinkedIn page</a> is here.
+  
+  For open positions, see here. </br></br>
+  
+  NOTE: Current B. Tech students can take up projects through one of the following modes. Please email one of the faculty members.
+  <ul>
+  <li>R&D Project (6 credits)</li>  
+  <li>B. Tech Project (6 Credits)</li>
+  <li>Additional Learning Opportunity (ALO)</li>
+  
+  Summer internships or Co-op during the semester
+</ul>
+</p>
 <!-- Sponsors
 =======================================================-->
-<center>
-  <h1 style="margin: 50px">
-    <span style="border-bottom: 2px solid black">Our Sponsors</span>
+
+  <h1 style="margin-top: 50px;margin-bottom: 20px;">
+    <span style="border-bottom: 2px solid black">OUR SPONSORS</span>
   </h1>
-</center>
+
 <section class="row">
   <div class="row">
     {% for sponsor in site.data.sponsors.sponsors%}

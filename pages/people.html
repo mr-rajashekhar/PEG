@@ -8,15 +8,15 @@ comments: false
 
 <!-- Home Intro The background and the text on it!
 ================================================== -->
-{% if page.url == "/people/" %}
-<div>
-  <img src="{{site.baseurl}}/assets/images/people.png" />
-</div>
-{% endif %}
 
 <!-- Faculty
 ================================================== -->
-<center><h1 style="margin: 50px">Faculty</h1></center>
+<center>
+  <!-- <h1 style="margin-top: 100px;margin-bottom: 20px;">FACULTY</h1> -->
+<h1 style="margin-top:100px;margin-bottom: 30px">
+  <span style="border-bottom: 2px solid black">FACULTY</span>
+</h1>
+</center>
 <section class="row">
   <div class="row">
     {% for people in site.posts%}{% if people.category == "faculty" %}
@@ -25,9 +25,14 @@ comments: false
   </div>
 </section>
 
-<center><h1 style="margin: 50px">Students</h1></center>
+<center>
+  <!-- <h1 style="margin-top: 100px;margin-bottom: 20px;">FACULTY</h1> -->
+<h1 style="margin-top:10px;margin-bottom: 30px">
+  <span style="border-bottom: 2px solid black">STUDENTS</span>
+</h1>
+</center>
 
-<h2 style="margin-bottom: 30px; border-bottom: 1000px;">Present</h2>
+<h3 style="margin-bottom: 30px; border-bottom: 1000px;">PRESENT STUDENTS</h3>
 <section class="row">
   <div class="row">
     {% for people in site.posts%}{% if people.category == "student" %}
@@ -37,7 +42,7 @@ comments: false
   </div>
 </section>
 
-<h2 style="margin-bottom: 30px; border-bottom: 1000px;">Past</h2>
+<h3 style="margin-bottom: 30px; border-bottom: 1000px;">PAST STUDENTS</h3>
 <section class="row">
   <div class="row">
     {% for people in site.posts%}{% if people.category == "student" %}
