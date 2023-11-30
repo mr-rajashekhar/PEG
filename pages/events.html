@@ -1,20 +1,27 @@
 ---
-layout: page
+layout: default
 title: Contact
-permalink: "/contact/"
+permalink: "/events/"
 comments: false
 ---
+<section id="researchArea" class="p-5">
+  <div class="container">
+      <h1 style="margin-top:50px;">Events</h1>
+      <h3 style="margin-top:50px;">Upcoming Events</h3>
+      {% for event in site.posts%}{% if event.category == "events" %}
+      {% if event.status == "upcoming" %}
+      <div class="row align-items-center justify-content-between" style="border-bottom: 2px solid black">
+        {% include events_info.html %}
+      </div>
+    {%endif%} {%endif%} {% endfor %}
 
-<form action="https://formspree.io/{{site.email}}" method="POST">    
-<p class="mb-4">Thank you for your interest in getting in touch with us. Please send your message here. We will reply as soon as possible!</p>
-<div class="form-group row">
-<div class="col-md-6">
-<input class="form-control" type="text" name="name" placeholder="Name*" required>
+     <h3 style="margin-top:50px;">Past Events</h3>
+      {% for event in site.posts%}{% if event.category == "events" %}
+      {% if event.status == "past" %}
+      <div class="row align-items-center justify-content-between" style="border-bottom: 2px solid black">
+        {% include events_info.html %}
+      </div>
+      {%endif%}{%endif%} {% endfor %}
 </div>
-<div class="col-md-6">
-<input class="form-control" type="email" name="_replyto" placeholder="E-mail Address*" required>
-</div>
-</div>
-<textarea rows="8" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>    
-<input class="btn btn-dark" type="submit" value="Send">
-</form>
+
+

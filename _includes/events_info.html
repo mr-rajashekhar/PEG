@@ -1,0 +1,10 @@
+{% assign author = site.authors[post.author] %}
+<div class="col-md">
+    <img src="{{ site.baseurl }}/{{event.image}}" class="img-fluid" alt="">
+</div>
+<div class="col-md p-5">
+    <h2>{{event.title}}</h2>
+    <p class="lead">
+        {{ event.excerpt | strip_html | truncatewords:100 }}
+    </p>
+</div>
