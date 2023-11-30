@@ -1,0 +1,12 @@
+# Top Menu
+slides:
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/slides/slide1.jpg
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/slides/slide2.jpeg
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/slides/slide3.jpg
+

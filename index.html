@@ -15,23 +15,19 @@ background: "/img/bg-index.jpg"
 <br class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="{{site.baseurl}}/assets/images/slide1.jpg">
-    <!-- <div class="text">Caption Text</div> -->
-  </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
+  {% for slide in site.data.slides.slides%}
+  <div class="mySlides fade">{% include slides.html %}</div>
+  {% endfor %}
+  <!-- <div class="mySlides fade">
     <img src="{{site.baseurl}}/assets/images/slide2.jpeg" style="width:100%">
     <div class="text">Ph.D. Scholar Little Pradhan from the group presented her work on cascaded modular converters at hashtag#IECON2023!</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
     <img src="{{site.baseurl}}/assets/images/slide3.jpg" style="width:100%">
     <div class="text">Caption Three</div>
-  </div>
+  </div> -->
 
 
 <h1 style="margin-top:20px;margin-bottom: 0px">
@@ -58,7 +54,7 @@ background: "/img/bg-index.jpg"
 =======================================================-->
 
   <h1 style="margin-top: 50px;margin-bottom: 20px;">
-    <span style="border-bottom: 2px solid black">OUR SPONSORS</span>
+    <span style="border-bottom: 2px solid black">COLLABORATIONS/FUNDING AGENCIES/SPONSORS</span>
   </h1>
 
 <section class="row">
